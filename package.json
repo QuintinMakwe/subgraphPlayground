@@ -1,0 +1,18 @@
+{
+  "name": "NubianSubgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graph codegen ./token.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ quintinmakwe/usdttokenexplorer ./token.yaml --access-token"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.26.0",
+    "@graphprotocol/graph-ts": "^0.24.1",
+    "typescript": "^4.5.5"
+  }
+}
